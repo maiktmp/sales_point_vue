@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+
+ my-app:
+  container_name: food_sopp_app
+  build:
+   context: .
+   dockerfile: app.docker
+  volumes:
+   - '.:/app'
+   - '/app/node_modules'
+  ports:
+   - '8081:8080'
