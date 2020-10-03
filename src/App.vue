@@ -18,7 +18,7 @@
                         <v-icon medium>list_alt</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <router-link to="/create-order">Resumen de Órdenes</router-link>
+                        <router-link to="/orders">Resumen de Órdenes</router-link>
                     </v-list-item-content>
                 </v-list-item>
             </v-list>
