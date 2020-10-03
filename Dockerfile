@@ -12,4 +12,6 @@ ENV PATH /usr/src/app/node_modules/.bin:$PATH
 COPY package.json /usr/src/app/package.json
 RUN npm install
 # start app
-CMD ["npm", "run", "serve"]
+
+
+#sales_point_vue]$ docker run -it -v ${PWD}:/usr/src/app -v /usr/src/app/node_modules -p 3503:8080 sales_point_2CMD ["npm", "run", "serve"]

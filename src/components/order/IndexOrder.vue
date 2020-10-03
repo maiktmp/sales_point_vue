@@ -13,7 +13,9 @@
                 </h5>
                 <p class="teal--text text-center">
                     {{`${order.comments || ""}`}}
-
+                </p>
+                <p class="teal--text text-center">
+                    {{` \$${order.quantity * order.product.price}.00`}}
                 </p>
                 <h6 class="orange--text text-center" v-if="order.status === CREATED">Orden Pendiente</h6>
                 <h6 class="indigo--text text-center" v-if="order.status === DELIVERED">Orden Entregada</h6>
